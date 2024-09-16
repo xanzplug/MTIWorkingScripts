@@ -1,0 +1,35 @@
+echo "# MTIWorkingScripts" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xanzplug/MTIWorkingScripts.git
+git push -u origin main
+import { createServer } from 'node:http';
+const server = createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World!\n');
+});
+// starts a simple http server locally on port 3000
+server.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on 127.0.0.1:3000');
+});
+
+import assert from 'node:assert';
+import test from 'node:test';
+test('that 1 is equal 1', () => {
+  assert.strictEqual(1, 1);
+});
+test('that throws as 1 is not equal 2', () => {
+  // throws an exception because 1 != 2
+  assert.strictEqual(1, 2);
+});
+
+hasher.setEncoding('hex');
+// ensure you have a `package.json` file for this test!
+hasher.write(await readFile('package.json'));
+hasher.end();
+const fileHash = hasher.read();
+end 
+discord.js 
+BAN = [ENTERUSERNAME]
